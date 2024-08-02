@@ -1,0 +1,374 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.flex{
+    display: flex;
+}
+.cabecalho{
+    margin: 0 auto; 
+}
+
+body{
+    background-color: #F7F7F7;
+    height: 100vh;
+}
+header{
+    margin: 26px 20px;
+    background-color: #00115E;
+    border-radius: 40px;
+    padding: 20px 6% ;
+}
+header > .cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 20px;
+    height: 20px;
+
+}
+header a{
+    text-decoration: none;
+    transition: .2s;
+    color: #FFFFFF;
+}
+header a:hover{
+    color: #00EAAB;
+    
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav.menu-desktop{
+    margin-left: 110px;
+    
+}
+header nav ul li{
+    display: inline-block;
+    padding: 16px 40px;
+    font-size: 18px;
+}
+    
+.btn-button button{
+    padding: 10px 40px;
+    font-size: 14px;
+    font-weight: 500; /*aumenta o peso da fonte*/
+    background-color: #00EAAB;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn-button button:hover{
+    color: white;
+    transform: scale(1.0);
+    border: 2px solid white;
+}
+
+/* Contador regressivo */
+.contagem{
+    margin: 2px;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.contagem div{
+    font-size: 26px;
+    padding: 15px;
+    width: 80px;
+    height: 60px;
+    border-radius: 18px;
+    box-sizing: border-box;
+    background-color: #FF9F18;
+    color:#FFFFFF ;
+  
+}
+.contagem-regressiva p{
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    margin: 12px auto;
+    padding: 16px;
+    background-color: #00115E;
+    border-radius: 10px;
+    color: #00EAAB;
+}
+
+/* imagens modelo adaptativo responsivo */
+img{
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.txt-topo-site{
+    position: absolute;
+    top: 80%; /* Ajuste conforme necessário */
+    left: 22%; /* Ajuste conforme necessário */
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    color: white; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    text-align: left; /* Centraliza o texto */
+    padding: 10px; /* Espaçamento interno */
+    
+}
+
+
+
+
+
+
+/* main */
+section.topo-do-site{
+    /* border: 12px solid rgb(255, 225, 0); */
+    background-image: url("/img/banner.png");
+    box-shadow: 24px 2px 18px rgb(0, 0, 0);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    /* border: 4px solid rgb(47, 0, 255); */
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+.texto-capa {
+    padding-top: 50px;
+    /* border: 2px solid red; */
+    max-width: 630px;
+}
+.texto-capa h1, p{
+    padding: 30px;
+    color: #F7F7F7;
+}
+.texto-capa  p{
+    font-size: 20px;
+}
+.texto-capa  h1{
+    font-size: 40px;
+}
+.btn-button {
+    display: flex;       /* Utiliza flexbox para facilitar a centralização */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;/* Centraliza verticalmente (se necessário) */
+}
+
+/* Segunda parte do topo do site */
+
+.planos p, h1{
+    color: #25272D;
+}
+.planos{
+    /* border: 2px solid red; */
+    padding-top: 50px;
+    text-align: center;
+    margin: auto;
+    font-size: 22px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.planos p{
+    font-size: 20px;
+}
+
+/* parte dos planos disponíveis */
+
+.plano-unico{
+    background-color: #ebebeb;
+    border-radius: 14px;
+    width: 400px;
+    height: 660px;
+    margin: auto;
+}
+
+.capa-plano-unico{
+    
+    background-color: #FF9F18;
+    border-radius: 14px;
+    width: 399x;
+    height: 300px;
+}
+.texto-plano{
+    padding-top: 20px;
+    text-align: center;
+}
+.texto-plano h1, h4{
+    color: #F7F7F7;
+    text-shadow: #00000099 2px 1px 2px;
+}
+
+.faixa-azul{
+    background-color: #00115E;
+    margin-top: 20px;
+    width: 399x;
+    height: 25px;
+    
+}
+.faixa-azul h3{
+    text-align: center;
+    color: #00EAAB;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.preco{
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.preco h1{
+    font-size: 50px;
+}
+.preco h1, h5{
+    color: #F7F7F7;
+    text-shadow: #00000064 2px 1px 2px;
+}
+
+.plano-unico p{
+    color: #000;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Carrousel */
+
+.interface{
+    background-color: #00115E;
+    box-shadow: 24px 2px 20px rgb(0, 0, 0);
+    padding: 0; /* Adicionado */
+    margin: 0; /* Adicionado */
+}
+.interface .owl-carousel{
+    margin-top: 20px;
+    color: #ffa806;
+    padding: 20px 5%;
+}
+.interface .item{
+    background-color: #dcd8d8;
+    border-radius: 8px;
+    text-align: justify;
+    height: 700px; /* Altura fixa inicial */
+    overflow: hidden;
+    transition: height 0.5s ease;
+    padding: 0; /* Adicionado */
+    margin: 0; /* Adicionado */
+}
+
+.interface .item.expandido {
+    height: auto; /* Permite que a altura cresça conforme necessário */
+}
+
+.interface .item p{
+    color: #25272D;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.interface .depoimentos{
+    margin-top: 50px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.interface .depoimentos h1{
+    color: #ebebeb;
+    text-shadow: #1b1a1a99 5px 1px 2px;
+}
+.fotos-alunos img{
+    border-radius: 10px;
+    display: block; /* Adicionado */
+    margin: 0 auto; /* Adicionado */
+}
+
+.more-text {
+    display: none;
+}
+
+.ler-mais {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ler-mais:hover {
+    text-decoration: underline;
+}
+
+
+
+   
+
+/* Sobre */
+
+.sobre .professores{
+    border: 2px solid rgb(38, 255, 0);
+    height: 400px;
+    width: 300px;
+    background-color: #00115E;
+    text-align: center;
+    border-radius: 6px;
+}
+.sobre .professores h1{
+    color: #ebebeb;
+    text-align: center;
+}
+
+.img-professores img{
+    border: 2px solid red;
+    border-radius: 50%;
+    background-color: #FF9F18;
+    width: 50%;
+}
+.img-professores{
+    margin-top: 20px;
+    border: 3px solid rgb(64, 0, 255);
+    text-align: center;
+}
+#renan-mexer{
+    position: relative;
+    top: 20px;
+}
+.setor{
+    border: 2px solid red;
+    margin-top: 20px;
+}
+.descricao-professores{
+    font-size: 20px;
+    border: 2px solid red;
+}
+.sobre{
+    border: 2px solid red;
+    margin-top: 50px;
+    text-align: center;
+    padding: 40px;
+    
+
+}
+.sobre h1{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 32px;
+    color: #f19008;
+    
+}
+.sobre .flex{
+    margin-top: 20px;
+    border: 2px solid red;
+    justify-content: center;
+    gap: 100px;
+}
