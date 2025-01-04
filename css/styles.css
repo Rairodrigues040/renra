@@ -14,7 +14,9 @@ body{
 .cabecalho{
     margin: 0 auto; 
 }
-
+a{
+    text-decoration: none;
+}
 body{
     background-color: #F7F7F7;
     height: 100vh;
@@ -166,6 +168,11 @@ section.topo-do-site{
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center;/* Centraliza verticalmente (se necessário) */
 }
+.aluna-medicina{
+    box-sizing: border-box;
+    position: relative;
+    top: 5px;
+}
 
 /* Segunda parte do topo do site */
 
@@ -273,7 +280,7 @@ section.topo-do-site{
     height: auto; /* Permite que a altura cresça conforme necessário */
 }
 
-.interface .item p{
+.interface .item p, span{
     color: #25272D;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -288,6 +295,9 @@ section.topo-do-site{
 .interface .depoimentos h1{
     color: #ebebeb;
     text-shadow: #1b1a1a99 5px 1px 2px;
+}
+#arrasta-carousel{
+    text-align: center;
 }
 .fotos-alunos img{
     border-radius: 10px;
@@ -317,7 +327,6 @@ section.topo-do-site{
 /* Sobre */
 
 .sobre .professores{
-    border: 2px solid rgb(38, 255, 0);
     height: 400px;
     width: 300px;
     background-color: #00115E;
@@ -330,14 +339,12 @@ section.topo-do-site{
 }
 
 .img-professores img{
-    border: 2px solid red;
     border-radius: 50%;
     background-color: #FF9F18;
     width: 50%;
 }
 .img-professores{
     margin-top: 20px;
-    border: 3px solid rgb(64, 0, 255);
     text-align: center;
 }
 #renan-mexer{
@@ -345,20 +352,15 @@ section.topo-do-site{
     top: 20px;
 }
 .setor{
-    border: 2px solid red;
     margin-top: 20px;
 }
 .descricao-professores{
     font-size: 20px;
-    border: 2px solid red;
 }
 .sobre{
-    border: 2px solid red;
     margin-top: 50px;
     text-align: center;
     padding: 40px;
-    
-
 }
 .sobre h1{
     font-family: 'Franklin Gothic Medium';
@@ -368,7 +370,114 @@ section.topo-do-site{
 }
 .sobre .flex{
     margin-top: 20px;
-    border: 2px solid red;
     justify-content: center;
     gap: 100px;
 }
+
+/* Menu-mobile */
+
+.menu-mobile{
+    background-color: #000;
+    height: 1000vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+.btn-abrir-menu{
+    display: none;
+}
+
+
+/* Footer */
+footer{
+    background-color: #000621;
+}
+footer .nome-professores, .redes-sociais, .direitos-reservados {
+    padding: 54px;
+    margin: auto;
+}
+footer .nome-professores p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+footer .redes-sociais i{
+    color: #f19008;
+    background-color: #d5caca3e;
+    padding: 10px 8px;
+    margin: 2px;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: .2s;
+    display: block;
+
+}
+footer .redes-sociais i:hover{
+    transform: scale(1.0);
+    background-color: #f19008;
+    color: #dcd8d8;
+}
+footer .direitos-reservados p{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media screen and (max-width: 928px){
+.flex{
+    flex-direction: column;
+}
+.sobre .professores{
+    height: 400px;
+    width: 300px;
+    background-color: #00115E;
+    text-align: center;
+    border-radius: 6px;
+    margin: auto;
+}
+.linha{
+    height: 2px;
+    width: 200px;
+    background-color: #dcd8d8;
+    margin: auto;
+}
+}
+
+@media screen and (min-width: 1300px){
+    section.topo-do-site{
+        /* border: 12px solid rgb(255, 225, 0); */
+        background-image: url("/img/banner2.png");
+        box-shadow: 24px 2px 18px rgb(0, 0, 0);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 924px){
+
+    .texto-capa {
+        padding-top: 50px;
+        /* border: 2px solid red; */
+        max-width: 630px;
+        margin: auto;
+    }
+    .aluna-medicina{
+        margin: auto;
+    }
+     /* Cabeçalho */
+     header .menu-desktop, header .btn-contato{
+        display: none;
+    }
+
+    
+    }
