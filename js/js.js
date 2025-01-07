@@ -6,7 +6,7 @@ var dataFutura = new Date("August 22, 2024 12:00").getTime();
 var dias, horas, minutos, segundos;
 
 
-setInterval(function(){
+/*setInterval(function(){
     var dataAtual = new Date().getTime();
 
     var segundosTotal = (dataFutura - dataAtual)/1000;
@@ -25,7 +25,7 @@ setInterval(function(){
     document.querySelector(".horas").innerHTML = horas;
     document.querySelector(".minutos").innerHTML = minutos;
     document.querySelector(".segundos").innerHTML = segundos;
-},1000);
+},1000);*/
 
 //carousel
 
@@ -46,28 +46,7 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
-//saiba mais no carousel
 
-document.addEventListener("DOMContentLoaded", function() {
-    const lerMaisLinks = document.querySelectorAll('.ler-mais');
-    
-    lerMaisLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            const item = this.closest('.item');
-            const moreText = this.previousElementSibling;
-            
-            if (moreText.style.display === "none" || moreText.style.display === "") {
-                moreText.style.display = "inline";
-                item.classList.add('expandido');
-                this.textContent = "Ler menos";
-            } else {
-                moreText.style.display = "none";
-                item.classList.remove('expandido');
-                this.textContent = "Ler mais";
-            }
-        });
-    });
-});
 
 
 
